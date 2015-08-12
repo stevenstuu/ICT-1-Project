@@ -3,7 +3,7 @@
  <head>
 
   <script type="text/javascript">
-   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.musemenu.js", "jquery.watch.js", "gallery.css"], "outOfDate":[]};
+   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.musemenu.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "jquery.watch.js", "jquery.scrolleffects.js", "gallery.css"], "outOfDate":[]};
 </script>
   
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
@@ -12,7 +12,7 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?4052507572"/>
   <link rel="stylesheet" type="text/css" href="css/master_a-master.css?370226954"/>
-  <link rel="stylesheet" type="text/css" href="css/gallery.css?74111875" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/gallery.css?3770881234" id="pagesheet"/>
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
@@ -44,6 +44,58 @@
    <div class="clip_frame colelem" id="u169"><!-- image -->
     <img class="block" id="u169_img" src="images/tstamp.png" alt="" width="921" height="18"/>
    </div>
+   <div class="SlideShowWidget clearfix colelem" id="slideshowu562"><!-- none box -->
+    <div class="popup_anchor" id="u569popup">
+     <div class="SlideShowContentPanel clearfix" id="u569"><!-- stack box -->
+      <div class="SSSlide clip_frame clearfix ose_pre_init grpelem" id="u570"><!-- image -->
+       <div id="u570_clip">
+        <img class="ImageInclude position_content" id="u570_img" data-src="images/1048155_10152837792448585_8061897565181727138_o.jpg" src="images/blank.gif" alt="" data-width="890" data-height="668"/>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="popup_anchor" id="u564popup">
+     <div class="SlideShowCaptionPanel clearfix" id="u564"><!-- stack box -->
+      <div class="SSSlideCaption clearfix grpelem" id="u565-4"><!-- content -->
+       <p>Caption is placed here</p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="SlideShowWidget clearfix colelem" id="slideshowu617"><!-- none box -->
+    <div class="popup_anchor" id="u628popup">
+     <div class="SlideShowContentPanel clearfix" id="u628"><!-- stack box -->
+      <div class="SSSlide clip_frame ose_pre_init grpelem" id="u629"><!-- image -->
+       <img class="block ImageInclude" id="u629_img" data-src="images/10410293_10152886588133585_4053700645446632581_n-crop-u629.jpg" src="images/blank.gif" alt="" data-width="720" data-height="612"/>
+      </div>
+     </div>
+    </div>
+    <div class="popup_anchor" id="u624popup">
+     <div class="SlideShowCaptionPanel clearfix" id="u624"><!-- stack box -->
+      <div class="SSSlideCaption clearfix grpelem" id="u625-4"><!-- content -->
+       <p>Caption is placed here</p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="SlideShowWidget clearfix colelem" id="slideshowu635"><!-- none box -->
+    <div class="popup_anchor" id="u644popup">
+     <div class="SlideShowContentPanel clearfix" id="u644"><!-- stack box -->
+      <div class="SSSlide clip_frame clearfix ose_pre_init grpelem" id="u645"><!-- image -->
+       <div id="u645_clip">
+        <img class="ImageInclude position_content" id="u645_img" data-src="images/10659096_10152496699753585_605339028079377634_o.jpg" src="images/blank.gif" alt="" data-width="890" data-height="668"/>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="popup_anchor" id="u647popup">
+     <div class="SlideShowCaptionPanel clearfix" id="u647"><!-- stack box -->
+      <div class="SSSlideCaption clearfix grpelem" id="u648-4"><!-- content -->
+       <p>Caption is placed here</p>
+      </div>
+     </div>
+    </div>
+   </div>
    <div class="verticalspacer"></div>
    <div class="clip_frame colelem" id="u488"><!-- image -->
     <img class="block" id="u488_img" src="images/tstamp.png" alt="" width="921" height="18"/>
@@ -66,6 +118,11 @@
 </script>
   <script src="scripts/museutils.js?183364071" type="text/javascript"></script>
   <script src="scripts/jquery.musemenu.js?3957776250" type="text/javascript"></script>
+  <script src="scripts/jquery.scrolleffects.js?3860644955" type="text/javascript"></script>
+  <script src="scripts/webpro.js?3803554875" type="text/javascript"></script>
+  <script src="scripts/musewpslideshow.js?242596657" type="text/javascript"></script>
+  <script src="scripts/jquery.museoverlay.js?493285861" type="text/javascript"></script>
+  <script src="scripts/touchswipe.js?4038331989" type="text/javascript"></script>
   <script src="scripts/jquery.watch.js?71412426" type="text/javascript"></script>
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -76,6 +133,12 @@ typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw E
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
 Muse.Utils.initWidget('.MenuBar', function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+$('#u570').registerOpacityScrollEffect([{"fade":306,"opacity":100,"in":[-Infinity,517.75]},{"opacity":50,"in":[517.75,517.75]},{"fade":306,"opacity":0,"in":[517.75,Infinity]}]);/* scroll effect */
+Muse.Utils.initWidget('#slideshowu562', function(elem) { $(elem).data('widget', new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:3000,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'off',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false})); });/* #slideshowu562 */
+$('#u629').registerOpacityScrollEffect([{"fade":306,"opacity":100,"in":[-Infinity,1206.25]},{"opacity":50,"in":[1206.25,1206.25]},{"fade":306,"opacity":0,"in":[1206.25,Infinity]}]);/* scroll effect */
+Muse.Utils.initWidget('#slideshowu617', function(elem) { $(elem).data('widget', new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:3000,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'off',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false})); });/* #slideshowu617 */
+$('#u645').registerOpacityScrollEffect([{"fade":306,"opacity":100,"in":[-Infinity,1894.75]},{"opacity":50,"in":[1894.75,1894.75]},{"fade":306,"opacity":0,"in":[1894.75,Infinity]}]);/* scroll effect */
+Muse.Utils.initWidget('#slideshowu635', function(elem) { $(elem).data('widget', new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:3000,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'off',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false})); });/* #slideshowu635 */
 Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */

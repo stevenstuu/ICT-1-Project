@@ -10,8 +10,8 @@
 
 .version.login /* version checker */
 {
-	color: #0000EE;
-	background-color: #794964;
+	color: #0000E4;
+	background-color: #72943D;
 }
 
 #page
@@ -330,8 +330,8 @@
 	border-color: #C4C4C4;
 	background-color: #F2F2F2;
 	padding: 6px;
-	line-height: 14px;
 	color: #C4C4C4;
+	line-height: 14px;
 	font-style: italic;
 	position: relative;
 	margin-right: -10000px;
