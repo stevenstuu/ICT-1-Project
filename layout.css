@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/* CSS Document */
+
+		/* positioning Styles */
+		#container { 
+			width: 900px;
+			margin: 0 auto;
+		}
+		
+		#content {
+	position: relative;
+	padding: 20px 300px 60px 20px;
+	
+		}
+		
+		#footer { 
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			padding: 0 20px;
+			background: #000; 
+	
+		}
+/*Navigation bar*/
+nav ul ul {
+	display: none;
+	width: 195px;
+	}
+
+nav ul li:hover > ul {
+	display:block;
+	}
+
+nav ul {
+	background: #000000;
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 0px;
+	border-radius: 10px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	width:900px;
+	}
+	
+nav ul: after {
+	content: "", clear; both; display; block;
+	}
+
+nav ul li {
+	float: left;
+}
+	nav ul li:hover {
+		background: #333;
+		background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+	}
+		nav ul li:hover a {
+			color: #fff;
+		}
+	
+	nav ul li a {
+		display: block; padding: 18px 58px;
+		color: #333; text-decoration: none;
+	}
+	
+nav ul ul {
+	background: #333;radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+	z-index: 999;
+}
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #6b727c;
+		border-bottom: 1px solid #575f6a;
+		position: relative;
+	}
+		nav ul ul li a {
+			padding: 15px 40px;
+			color:;
+		}	
+			nav ul ul li a:hover {
+				background: #4b545f;
+			}
+			
+nav ul ul ul {
+	position: absolute; left: 50%; top:0;
+}
+/*Navigation bar*/
+
+		#wrapper {
+			
+			background: #000000;
+			background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+			background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+			background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+			box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+			padding: 0 0px;
+			border-radius: 10px;
+			width:900px;
+			}		
+	
+		
+		/*sidebar*/		
+		
+		#sidebar {
+			position: absolute;
+			top: 25px;
+			bot: 10px;
+			left: 620px;
+			width: 210px;
+			padding: 0 20px;
+			background: #000; 
+			background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+			background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+			background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+			box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+			
+		}
+		
+		#table {
+			padding-top: 20px;
+			padding-left: 20px;
+			padding-bottom: 60px;
+			width: 650px;
+		}
+	
+		/* body Styles */
+		body { 
+			margin: 0;
+			font:Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			background: #FFFFFF;
+		}
+		
+		body a {
+			color: #000;
+			text-decoration: none;
+		}
+		
+		body a:hover {
+			color: #FF0000;
+		}
+		
+		/* heading Styles */
+		
+		h2 {
+			font:Arial, Helvetica, sans-serif;
+			color: #FFF;
+			text-decoration: underline;
+		}
+		
+		h2.content {
+			font:Arial, Helvetica, sans-serif;
+			color: #000;
+			text-decoration: none;
+			}
+		
+		h3 {
+			font:Arial, Helvetica, sans-serif;
+		}
+		
+		
+		h4 {
+			font:Arial, Helvetica, sans-serif;
+		}
+		
+		h5 {
+			font:Arial, Helvetica, sans-serif;
+			color: #FF0000;
+			text-decoration: underline;
+		}
+		
+		/* footer Styles */
+		#footer p {
+			text-align: center;
+			color: #FFF;
+		}
+		
+		#footer a {
+			color: #FFF;
+			text-decoration: none;
+		}
+		
+		#footer a:hover {
+			color: #FF0000;
+		}
+		
+		/* navigationBar Styles */
+		#navigationBar a {
+			display: block;
+			float: right;
+			color: #FFF;
+			text-decoration: none;
+			padding: 0 20px;
+			line-height: 50px;
+			border-left: 1px solid #FFFFFF;
+		}
+		
+		#navigationBar a:hover {
+			background: #91AB3B;
+		}
+		
+		/* sidebar Styles */
+		#sidebar p {
+			color: #FFF;
+		}
+		
+		#sidebar a {
+			color: #FFF;
+		}
+		
+		#sidebar a:hover {
+			color: #FF0000;
+		}
+		
+		#sidebar li {
+			color: #FFF;
+		}
+		
+		table, td, th {
+			border-collapse: collapse;
+			border: 1px solid #ABABAB;
+		}
+		
+		td, th {
+			font:Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			text-align: center;
+		}
+
+		/*FollowUs*/
+		#follow{
+			border-bottom: solid #FFF;
+			}
+			
+		/*Radio*/
+.left{
+float:left;
+}
+			
+/*Table*/
+table.border{
+margin:0px auto;
+border: #FFF;
+}
+
+/*sidebar text*/
+#color{
+	color: #000;
+	}

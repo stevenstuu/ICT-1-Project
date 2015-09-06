@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font: 100% "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #FFF;
+	background-color: #FFFFFF;
+}
+
+		#container {
+            margin: auto;
+			font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+			font-size:14px;
+			color:#000;
+			width: 900px;
+			text-align:center;
+		}
+	
+		#footer {
+			position: fixed;
+			text-align:center;
+			background: white;
+			color: darkgrey;
+			bottom: 0px;
+			width:930px;
+		}
+		
+		#header {
+            margin-left:700px;
+			position: absolute;
+			text-align:right;
+			background-color:transparent;
+			color: #000;
+			top: 0px;
+		}
+
+.content {
+    padding-top: 100px;
+    padding-bottom: 150px;
+	font-size:16px;
+	display:block;
+	background-color:#FFF;
+	color:grey;
+	float:left;
+	text-align:justify;
+	width:900px;
+}
+.content2 {
+    padding-top: 500px;
+    padding-bottom: 150px;
+    font-size:16px;
+    display:block;
+    background-color:#FFF;
+    color:grey;
+    float:left;
+    text-align:justify;
+    width:800px;
+}
+
+
+.login {
+    margin-top: 300px;
+	margin: 200px auto;
+	width: 275px;
+	height: auto;
+	padding: 10px;
+	background: linear-gradient(top, #FFF 0%, #FFFFFF 100%);
+	background: -moz-linear-gradient(top, #FFF 0%, #FFF 100%);
+	background: -webkit-linear-gradient(top, #ABABAB 0%,#FFF 100%);
+	box-shadow: #FFF 0px 0px 9px;
+	border-radius: 5px;
+}
+
+.sign_up {
+	background-color:#FFF;
+	color:#000;
+	position:absolute;
+	top: 200px;
+	width: 900px;
+	height: 300px;
+	padding: 20px;
+	box-shadow: #000 0px 0px 9px;
+	border-radius: 5px;
+}
+	
+nav ul ul {
+	display: none;
+	width: 195px;
+}
+
+
+nav ul li:hover > ul {
+	display:block;
+	}
+
+nav ul {
+    text-decoration: none;
+	background:#FFF;
+	padding: 0;
+	border-radius: 5px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	width:400px;
+	box-shadow: #FFF 0px 0px 20px;
+	}
+	
+nav ul: after {
+	content: "", clear; both; display; block;
+	}
+
+nav ul li {
+    text-decoration: none;
+	float: left;
+}
+
+	nav ul li a {
+        text-decoration: none;
+		display: block;
+		padding: 18px 38px;
+		color: #000;
+	}
+
+	nav ul li:hover {
+        text-decoration: none;
+		background: #CCC;
+	}
+	
+		nav ul li:hover a {
+            text-decoration: none;
+			color: #000;
+		}
+
+nav ul ul {
+    text-decoration: none;
+	background: #CCC;
+	radius: 0px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	z-index: 1000;
+}
+
+	nav ul ul li {
+        text-decoration: none;
+		float: none; 
+		border-top: 1px solid #000;
+		position: relative;
+	}
+	
+		nav ul ul li a {
+            text-decoration: none;
+			padding: 15px 40px;
+		}	
+		
+		nav ul ul li a:hover {
+            text-decoration: none;
+			background: #666;
+		}
+			
+nav ul ul ul {
+    text-decoration: none;
+	position: absolute;
+	left: 100%;
+	top:0;
+}
+
